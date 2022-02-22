@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yomogi', cursive;
+}
+
+body{
+    background-image: url(images/sky_00088.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p, a{
+    color: #fff;
+}
+
+header{
+	width: 75%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1{
+    display: none;
+}
+
+header li{
+    text-align: center;
+    border-top: 1px solid #fff;
+    margin: 0 10px;
+    padding-top: 10px;
+    width: 100px;
+}
+
+header li a{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+header li:hover{
+    border-top: 3px solid #fff;
+}
+
+.gNav-menu{  
+    width: 70%;
+    margin: 0 auto; 
+    display: flex;
+    list-style: none;
+}
+
+.slick{
+    width: 100%;
+}
+
+.main_imgs {
+    position: relative;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.main_imgs p {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    color: #000;
+}
+
+
+.main_imgs img{
+    width: 100%;
+	height: 500px;
+}
+
+.news{
+    width: 60%;
+    margin: 50px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bar{
+    margin: 25px auto 50px; 
+}
+
+.box{
+    width: 30%;
+    border: 1px solid #fff;
+}
+
+.box img{
+    width: 100%;
+    height: 150px;
+}
+
+.box p{
+    display: block;
+    padding: 10% 5%;
+    font-size: 12px;
+}
+
+.release{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.release p{
+   padding-top: 10px;
+}
+
+.center{
+	padding-left: 20px;
+}
+
+.release a{
+    font-size: 10px;
+    text-decoration: none;
+    border: 2px dotted #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.music{
+    width: 40%;
+    margin: 0 auto 10%;
+    border: 1px solid #fff;
+}
+
+.music_main{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.music_main img{
+    width: 100%;
+}
+
+audio{
+    display: block;
+    margin: 10% auto;
+    width: 90%;
+}
+
+.playlist{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    margin: 0 auto; 
+    text-align: center;
+    width: 400px;
+    font-size: 3px;
+}
+
+.sns img{
+    margin: 10px 0 30px;
+}
+
+footer img{
+    margin: 100px 0;
+}
+
+@media screen and (max-width: 480px){
+    #hamburger .btn-gNav span{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #fff;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+    }
+
+    #hamburger .btn-gNav span:nth-child(1) {
+        top:0;
+    }
+
+    #hamburger .btn-gNav span:nth-child(2) {
+        top:10px;
+    }
+
+    #hamburger .btn-gNav span:nth-child(3) {
+        top:20px;
+    }
+
+    #hamburger .btn-gNav{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+    }
+
+    #gNav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        z-index: 2;
+        background-color:rgba(27,30,82,0.8);
+    }
+
+    #gNav.open{
+        right: 0px;
+        transition: 0.5s;
+    }
+
+    #gNav.open:hover{
+        transition: 0.5s;
+    }
+
+    #gNav .gNav-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header li{
+        margin: 0 auto;
+        padding: 20px;
+        width: 120px;
+    }
+
+    header li:first-child{
+        border-top: none !important;
+    }
+    
+    h1{
+        display: block;
+        margin: auto auto 0;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .main_imgs img{
+        object-fit: cover;
+        height: 210px;
+    }
+
+    .news{
+        width: 100%;
+        display: block;
+    }
+
+    .box{
+        width: 50%;
+        margin: 0 auto 10%;
+    }
+    
+    .release{
+        width: 80%;
+    }
+
+    .release p{
+        padding-left: 10px;
+    }
+
+    .bar{
+        display: block;
+        width: 50%;
+        margin: 0 auto 10%; 
+    }
+
+    .music{
+        width: 90%;
+        padding: 0;
+    }
+        
+    .music_main{
+        height: 100%;
+        margin-bottom: 0;
+    }
+        
+    .music_main img{
+        height: 200px;
+    }
+        
+    .playlist{
+        margin: 10% auto;
+    }
+    
+	footer{
+		width: 100%;
+	}
+	
+    footer p{
+        width: 50%;
+        margin: 0 auto; 
+    }
+}

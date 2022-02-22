@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #fdce00;
+    color: #ef0000;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    text-align: center;
+	margin: 50px auto;
+}
+
+main{
+    margin: 100px 0;
+}
+
+.contents{
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail{
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+
+.detail img{
+    width: 350px;
+    height: 200px;
+}
+
+@keyframes pulse {
+    25% {
+      transform: scale(1.1);
+    }
+  
+    75% {
+      transform: scale(.9);
+    }
+  }
+
+.detail p{
+    display: block;
+    padding: 50px 0;
+}
+
+.detail:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+footer{
+    padding: 100px 0 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+
+    html, body{
+        height: auto;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    .contents{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+}

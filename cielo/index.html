@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Cielo</title>
+</head>
+<body>
+    <header>
+        <h1>Cielo</h1>
+        <div id="hamburger">
+            <p class="btn-gNav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+            <nav id="gNav">
+                <ul class="gNav-menu">
+                    <li style="border-top: 3px solid #fff;"><a href="">ホーム</a></li>
+                    <li><a href="">お知らせ</a></li>
+                    <li><a href="">プロフィール</a></li>
+                    <li><a href="">作品</a></li>
+                    <li><a href="">ライブ</a></li>
+                    <li><a href="">ショップ</a></li>
+                    <li><a href="">ご連絡</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main_imgs">
+            <ul class="slick">
+                <li><img src="images/spring.jpg"  alt=""></li>
+                <li><img src="images/summer.jpg"  alt=""></li>
+                <li><img src="images/autumn.jpg"  alt=""></li>
+                <li><img src="images/winter.jpg"  alt=""></li>
+            </ul>
+        </div>
+        <div class="news">
+            <div class="box">
+                <img src="images/tv.jpg" alt="">
+                <p>【初地上波デビュー】</p>
+            </div>
+            <div class="box">
+                <img src="images/winter.jpg" alt="">
+                <p>4th single「雲」リリース</p>
+            </div>
+            <div class="box">
+                <img src="images/film.jpg" alt="">
+                <p>映画「film」にコメントを送らせていただきました。</p>
+            </div>
+            <img class="bar" src="images/bar.webp" alt="">
+            <div class="release">
+                <p>4th&nbsp;single</p>
+                <p class="center">「雲」</p>
+                <a href="#">リリース情報</a>
+            </div>
+        </div>
+        <div class="music">
+            <div class="music_main">
+                <img src="images/winter.jpg" alt="">
+                <audio controls>
+                    <source src="Beyond_The_Dreams.mp3" type="">
+                </audio>
+                <div class="playlist">
+                    <p>1&nbsp; 雲</p>
+                    <p>02:29</p>
+                </div>             
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>SNS等のフォローお願いします。</p>
+        <div class="sns">
+            <img src="images/twitter.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/youtube.png" alt="">
+            <img src="images/messagenger.png" alt="">
+        </div>
+        <small><p>&copy; 2021 cielo <br> artworks by hanako yamada  designed by  tarou suzuki</p></small>
+        <img src="images/footer.webp" alt="">
+    </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $('.slick').slick({
+            dots: true,
+            centerMode: true,
+            centerPadding: '25%',
+            arrows: false,
+            responsive: [{
+            breakpoint: 800,  //ブレイクポイントを指定
+            settings: {
+                centerMode:'false',
+            },
+            }]
+        });
+    </script>
+    <script>
+        $(function() {
+        $('.btn-gNav').on("click", function(){
+        $(this).toggleClass('open');
+        $('#gNav').toggleClass('open');
+        });
+    });
+    </script>
+</body>
+</html>
